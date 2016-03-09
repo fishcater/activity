@@ -8,8 +8,7 @@
     <meta name="description" content="" />
     <link rel="shortcut icon" href="http://www.qyer.com/favicon.ico" />
         <link href="http://static.qyer.com/min/?version=1456481565&f=m/basic/css/base.css,m/basic/css/headfoot.css,m/project/other/zt/20160119companion/css/index.css" rel="stylesheet" type="text/css" media="screen" />
-    <script type="text/javascript" src="http://static.qyer.com/min/?version=1456481565&&f=m/basic/js/zepto.min.js,m/basic/js/zepto-touch.js,m/basic/js/require.js,m/basic/js/qyerUtil.js,m/basic/js/header.js,m/basic/js/main_search.js,js/m2/oper_m.js,m/project/other/zt/20160119companion/js/index.js"></script>
-    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="/test.js"></script>
 </head>
 
 <body>
@@ -18,25 +17,7 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-<script>
-window.fromOpenId = 'o4kJ3t26OCwNMotsWyUbuP8Vabg4';
-window.openid = "o4kJ3t4HZib8-LRH74LhBsIoW2Uw";
-window.nickname = "Mooncat";
-window.sex = "1";
-window.language = "zh_CN";
-window.city = "深圳";
-window.province = "广东";
-window.country = "中国";
-window.headimgurl = "http://wx.qlogo.cn/mmopen/jb37UPn7vVLG8kjeWqAYaAJ6Q1g5avjYPC8jkLGFmTFZCQ3rYkuox1lQfvADmP6jQJC0VlTDg8FJFhZEfK6gHibjm0KfzyrS6/0";
-window.privilege = "Array";
-window.unionid = "oi5dvt5LdfaKlbrvJFT1vp8FKq-s";
-window.answered = 1;
-</script>
-
 </head>
-
 <body>
 <!-- 整体 -->
 <section class="companionBox enterCurrent" id="js_online" style="display:block;">
@@ -268,12 +249,7 @@ window.answered = 1;
                 <ul>
                 </ul>
             </div>
-<!--             <div class="mores">
-                <a href="javascript:void(0);" class="more">
-                    <img src="http://static.qyer.com/m/project/other/zt/20160119companion/images/bt_answer_more.png" height="40" alt="">
-                </a>
-            </div>
- -->        </div>
+         </div>
 
 
     </section>
@@ -325,35 +301,6 @@ if(window.answered){
     }
     question.send(true);
 }
-wx.config({
-    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
-    appId: 'wxe743a0da9581b82b', // 必填，公众号的唯一标识
-    timestamp: '1456819151', // 必填，生成签名的时间戳
-    nonceStr: 'TwD21mbpqw2QIDJ2', // 必填，生成签名的随机串
-    signature: 'e2b518e86a80c5277b764bb28058dc982aa4b03b',// 必填，签名，见附录1
-    jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo' ] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
-});
-// wx.error(function(res){alert(res); console.log(res)}) 
-wx.ready(function(){
-    wx.onMenuShareTimeline(wxconfig);
-    wx.onMenuShareAppMessage(wxconfig);
-}) 
-
-var wxconfig = {
-    title: window.nickname + "邀请你测试你俩适合不适合一起旅行", // 分享标题
-    desc: '快来匹配你们的旅行偏好吧！',
-    link: 'http://m.qyer.com/event/together?state=' + openid, // 分享链接
-    imgUrl: window.headimgurl, // 分享图标
-    success: function () { 
-        // 用户确认分享后执行的回调函数
-        // alert('ok')
-    },
-    cancel: function () { 
-        // 用户取消分享后执行的回调函数
-        // alert('failed')
-    }
-}
-})
 </script>
 </body>
 </html>
