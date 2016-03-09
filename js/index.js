@@ -96,7 +96,7 @@ function initChoosen(){
 				html+='<img src="'+"/img/code.jpg"+'" width="45" height="45" alt="" style="display: block;">';
 				html+='<strong class="end">'+rate*20+'%</strong>';
 				html+='<dl>';
-				html+='<dt>'+"test+'</dt>';
+				html+='<dt>'+"test"+'</dt>';
 				html+='<dd>'+copywrite[rate]+'</dd>';
 				html+='</dl>';
 			}
