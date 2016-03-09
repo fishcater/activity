@@ -7,8 +7,11 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link rel="shortcut icon" href="http://www.qyer.com/favicon.ico" />
-        <link href="http://static.qyer.com/min/?version=1456481565&f=m/basic/css/base.css,m/basic/css/headfoot.css,m/project/other/zt/20160119companion/css/index.css" rel="stylesheet" type="text/css" media="screen" />
-    <script type="text/javascript" src="/test.js"></script>
+	<link href="http://static.qyer.com/min/?version=1456481565&f=m/basic/css/base.css,m/basic/css/headfoot.css,m/project/other/zt/20160119companion/css/index.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="/js/zepto.js"></script>
+<script type="text/javascript" src="/js/zepto.touch.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
 </head>
 
 <body>
@@ -27,7 +30,6 @@
         <img src="http://static.qyer.com/m/project/other/zt/20160119companion/images/onEnter.jpg" width="100%" alt="">
         <!-- 被好友邀请进来的样式   添加names  这个class    显示p元素   span内的内容动态接口显示 -->
         <div class="infos names">
-            <p style="display:;"><span>薛小肉</span>邀请你来测试<br />你们到底适不适合一起旅行</p>
             <a href="javascript:void(0);" id="js_onlineBtn" class="btn">
                 <img src="http://static.qyer.com/m/project/other/zt/20160119companion/images/bt_home.png" height="40" alt="">
             </a>
@@ -292,15 +294,5 @@
 
 </body>
 </html>
-<script>
-Zepto(function($){
-if(window.answered){
-
-    if(window.fromOpenId){
-        alert('你的答案已经保存，正在迅速匹配中');
-    }
-    question.send(true);
-}
-</script>
 </body>
 </html>
