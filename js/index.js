@@ -90,7 +90,7 @@ function initChoosen(){
 			}
 			var copywrite=['友情就这样走到了尽头','推荐听《分开旅行》','友情尚未成功 你萌还需努力','不一致的那几道题是啥','亲人也不过如此吧！','在一起吧'];
 			var html='';
-			for(var i in data.data[1]){
+			for(var i=0;i<5;i++){
 				var rate=2;
 				html+="<li>";
 				html+='<img src="'+"/img/code.jpg"+'" width="45" height="45" alt="" style="display: block;">';
