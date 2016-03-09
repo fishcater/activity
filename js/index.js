@@ -102,7 +102,7 @@ function initChoosen(){
 				html+='</dl>';
 			}
 */
-var html = "<img src='/img/code.jpg' />;
+var html = "<img src='/img/code.jpg' />";
 			$('.ppLists .lists ul').html(html)
 		},
 		printme:function(){
