@@ -88,6 +88,7 @@ var init = function(){
     idx = getUrlParam('idx'),
     placeName = getPlaceName(idx),
     imgUrl = getPic(idx);
+    document.querySelector('.picture').src=imgUrl;
     setImg(imgUrl);
     setName(name);
     setPlaceName(placeName);
