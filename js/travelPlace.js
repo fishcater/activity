@@ -72,6 +72,17 @@ var base64Decode = function(str){
     }
     return re;
 };
+var setTitle = function(title){
+    document.title = title;
+    var body = document.body;
+    var iframe = document.createElement('iframe');
+    iframe.src="/img/code.jpg";
+    iframe.style.display = "none";
+    iframe.addEventListener('load',function(){
+        body.removeChild(iframe);
+    });
+    body.appendChild(iframe);
+}
 var init = function(){
     var name = base64Decode(getUrlParam('name')),
     idx = getUrlParam('idx'),
@@ -80,6 +91,8 @@ var init = function(){
     setImg(imgUrl);
     setName(name);
     setPlaceName(placeName);
+    var title = name + "的气质最适合去"+placeName;
+    setTitle(title);
     if (getCookie("locale") && name==base64Decode(getCookie("myName"))){
         document.getElementById("btn2").innerHTML = "我要分享";
     }
