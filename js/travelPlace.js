@@ -1,5 +1,5 @@
-var place = ['芬兰.jpeg','巴黎.jpg','韩国.jpg','大堡礁.jpg','澳大利亚.jpeg','马尔代夫.jpg','朝鲜.jpeg','非洲.jpeg','日本.jpg','泰国.png','旧金山.jpg','贝加尔湖.jpeg','瑞士雪朗峰.jpg',
-'清迈.jpeg','埃及.jpg','沙巴.jpg','蒙古.png','柬埔寨.png','毛里求斯.jpg','土耳其棉花堡.jpg'];
+var place = ['芬兰.jpg','巴黎.jpg','韩国.jpg','大堡礁.jpg','澳大利亚.jpg','马尔代夫.jpg','朝鲜.jpg','非洲.jpg','日本.jpg','旧金山.jpg','贝加尔湖.jpg','瑞士雪朗峰.jpg',
+'清迈.jpg','埃及.jpg','沙巴.jpg','柬埔寨.jpg','毛里求斯.jpg','土耳其棉花堡.jpg','圣湖纳木错.jpg','帕劳.jpg','珠穆朗玛峰.jpg'];
 var getIdx = function(){
     var seed = 100000000,
     len = place.length,
@@ -10,15 +10,8 @@ var getPic =  function(idx){
     var fileName = place[idx].replace(/.*\./,parseInt(idx)+1+".");
     return "../img/" + fileName;
 };
-var bindEvent = function(){
-    document.getElementById('btn1').onclick = function(){
-        var pic = getPic();
-        console.log(pic);
-        document.querySelector('.pic').style.backgroundImage = "url('"+pic+"')";
-    };
-};
 var setImg = function(pic){
-    document.querySelector('.pic').style.backgroundImage = "url('"+pic+"')";
+    document.querySelector('.pic').src = pic;
 };
 var setName = function(name){
     document.getElementById('name').innerHTML = name;
@@ -87,7 +80,6 @@ var init = function(){
     idx = getUrlParam('idx'),
     placeName = getPlaceName(idx),
     imgUrl = getPic(idx);
-    document.querySelector('.picture').src=imgUrl;
     setImg(imgUrl);
     setName(name);
     setPlaceName(placeName);
