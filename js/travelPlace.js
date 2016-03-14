@@ -7,7 +7,7 @@ var getIdx = function(){
     return idx;
 };
 var getPic =  function(idx){
-    var fileName = place[idx];
+    var fileName = place[idx].replace(/.*\./,parseInt(idx)+1+".");
     var domain = "http://" + document.domain;
     return domain + "/img/" + fileName;
 };
