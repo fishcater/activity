@@ -8,8 +8,7 @@ var getIdx = function(){
 };
 var getPic =  function(idx){
     var fileName = place[idx].replace(/.*\./,parseInt(idx)+1+".");
-    var domain = "http://" + document.domain;
-    return domain + "/img/" + fileName;
+    return "../img/" + fileName;
 };
 var bindEvent = function(){
     document.getElementById('btn1').onclick = function(){
