@@ -1,1 +1,2 @@
-#activity
+# activity
+activities for wechat
