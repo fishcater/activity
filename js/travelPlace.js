@@ -75,7 +75,7 @@ var setTitle = function(title){
     document.title = title;
     var body = document.body;
     var iframe = document.createElement('iframe');
-    iframe.src="/img/code.jpg";
+    iframe.src="../img/code.jpg";
     iframe.style.display = "none";
     iframe.addEventListener('load',function(){
         body.removeChild(iframe);
@@ -112,5 +112,5 @@ var toResult = function(){
     var idx = getIdx();
     setCookie("locale",true,1);
     setCookie("myName",base64Encode(name),1);
-    location.href = "/travelPlace/index.html?idx="+idx+"&name="+base64Encode(name);
+    location.href = "index.html?idx="+idx+"&name="+base64Encode(name);
 };
