@@ -87,6 +87,7 @@ var init = function(){
     setTitle(title);
     if (getCookie("locale") && name==base64Decode(getCookie("myName"))){
         document.getElementById("btn2").innerHTML = "我要分享";
+        document.getElementById("btn1").innerHTML = "重新测试";
     }
     document.getElementById("btn2").onclick = function(){
         document.querySelector(".bg").style.display = "block";
